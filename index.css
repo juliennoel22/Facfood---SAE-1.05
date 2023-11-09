@@ -7,27 +7,13 @@
 
 html{
     background-color: black;
+    background-image: url(images/bois.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-nav{
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 3rem;
-    border-bottom: 2px solid white;
-}
-nav>a{
-    margin: 0 auto;
-    padding: 10px;
-    color: white;
-    font-size: 20px;
-}
-nav>a:hover{
-    background-color: white;
-    color:black;
-}
 
 img{
     display: flex;
@@ -36,7 +22,7 @@ img{
     align-items: center; 
     width:40%;
     height: 40%;
-  
+    
 }
 
 p{
@@ -45,3 +31,35 @@ p{
 }
 
 
+
+nav{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    border-bottom: 2px solid white;
+}
+nav>a{
+    margin: 0 auto;
+    padding: 10px;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+nav>a:hover{
+    background-color: white;
+    color:black;
+}
+/* Barre de scroll */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
