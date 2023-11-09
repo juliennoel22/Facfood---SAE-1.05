@@ -14,44 +14,43 @@ html{
     background-attachment: fixed;
 }
 
-
-img{
-    display: flex;
-    margin:auto;
-    justify-content: center; /* Centre horizontalement */
-    align-items: center; 
-    width:30%;
-    height: 30%;
-    margin-top: 0rem;
-}
-
-
-p,div{
+img, div{
+    width: 20%;
     display: block;
+    /* margin:0 45%; */
+    /* left:45px; */
+    /* display: flex;  */
     justify-content: center;
     align-items: center;
     text-align: center;
     margin: 0 auto;
+}
+img{
+    width:60%;
+    height: 60%;
+}
+h1{
+    color: white;
+    text-align: center;
+    padding: 3rem;
+    text-decoration: underline;
+    font-size: 60px;
+}
+p{
     font-size: 25px;
 }
 
-p{
-    text-align: center;
-    width: 50%;
-
+.produit>p{
+    margin-right: 0 ;
+    padding: 1rem;
 }
-#text{
-    margin-top: -5rem;
-
+.produit>p:first-child,.produit>a{
+    font-size:35px;
+    font-weight: bold;
+    color:rgb(255, 0, 0);
 }
-
-#lien{
-    background-color: rgba(0,0,0,0.8);
-    margin: 2rem auto;
-    border-radius: 1rem;
-    width: 30%;
-    
-    padding: 3rem;
+.prices{
+    color:rgb(77, 255, 0);
 }
 
 
@@ -71,12 +70,13 @@ nav>a{
     font-size: 30px;
     text-decoration: none;
     font-weight: bold;
-
+    
 }
 nav>a:hover{
     background-color: white;
     color:black;
 }
+
 /* Barre de scroll */
 ::-webkit-scrollbar {
     width: 10px;
@@ -86,3 +86,17 @@ nav>a:hover{
     background: white;
     border-radius: 10px;
 }
+
+@media (min-width: 320px) and (max-width: 768x) {
+    h1{
+        font-size: 5px; /* Taille du texte pour les titres sur tablettes */
+    }
+    
+    a {
+        font-size: 18px; /* Taille du texte pour les liens sur tablettes */
+    }
+    
+    p {
+        font-size: 16px; /* Taille du texte pour les paragraphes sur tablettes */
+    }
+}   
